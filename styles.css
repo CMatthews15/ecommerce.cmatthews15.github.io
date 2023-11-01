@@ -1,0 +1,126 @@
+
+
+html {
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display:flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:0;
+    background-color: rgb(207, 232, 207);}
+
+/*nav*/
+.title{
+    display: flex;
+    justify-content: center;
+   
+}
+.logo{
+    display: flex;
+   width: 14vw;
+   margin-bottom: -25px;
+   margin-top: -25px;
+   display: flex;
+   justify-content: center;
+}
+
+
+header {
+    background-color: rgb(29, 77, 46);
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 15px;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;;
+}
+
+nav li:after {
+    content: "";
+    position: relative;
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.3s ease;
+  }
+nav li:hover::after {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+  }
+
+/*footer*/
+footer {
+    width:100%;
+    background-color: rgb(29, 77, 46);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+    position: relative;
+    
+}
+h4{
+    margin-top:0px;
+    margin-bottom: 12px;
+}
+.info_form{ 
+    font-size: 32px;
+}
+footer > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul > li:nth-child(1) {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#footerLogo{
+    width: 8vw;
+    min-width:65px ;
+    height: 14vh;
+    border-radius: 250px;
+ }
+ 
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+        flex-direction: column;
+    }
+    header > h1, header > nav, nav > ul {
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+  
+}
