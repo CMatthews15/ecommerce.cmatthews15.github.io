@@ -7,16 +7,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 7vw;
+    
     margin-bottom: 3%;
     justify-content: space-evenly;
-    width:70%;
+    width:100%;
 }
 
 .map-responsive{
-    margin-right:;
+   min-width:250px;
     margin-top:2%;
-    width:40%;
+    width:30%;
 }
 .entry{
     padding:3%;
@@ -26,16 +26,15 @@
 }
 .input{
     width: 90%;
-    height: 650%;
-    margin: 2%;
+
     margin-bottom: 0;
     
 }
 #contact-form{
     padding: 1.2%;
-    margin-left: 4%;
     background-color: rgb(47, 74, 47);
     margin-top:8px;
+    width: 21%;
 
     
 }
@@ -47,9 +46,12 @@
 #reason{
     text-align: center;
     margin-top: 5%;
+    display:flex;
+    justify-content:center;
+    margin-inline: auto;
 }
 .gallery{
-    display: inline-flex;
+    display: flex;
     height:32vh;
     width: 80vw;
     justify-content: space-around;
@@ -58,19 +60,44 @@
     
     
 }
+#formButton{
+    display:flex;
+    justify-content:center;
+    margin-inline: auto;
+}
 
 #gallery1{
     height:30vh;
     margin-right:60 %;
     width:100%;
+    min-width: 180px;
+    max-width: 315px;
 }
 #gallery2{
     height:30vh;
+    min-height: 100px;
     margin-right: 8%;
     width:100%;
+    min-width: 180px;
+    max-width: 315px;
 }
 #gallery3{
     height:30vh;
     margin-right: 8%;
     width:100%;
+    min-width: 180px;
+    max-width: 315px;
+}
+
+@media screen and (max-width: 765px){ 
+    .container{
+    display:flex;
+    flex-direction: column;
+    }
+
+    .gallery{
+        display:flex;
+        flex-direction: column;
+        height: auto;
+    }
 }
