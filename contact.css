@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+
     margin-bottom: 3%;
     justify-content: space-evenly;
     width:100%;
@@ -16,7 +16,7 @@
 .map-responsive{
    min-width:250px;
     margin-top:2%;
-    width:30%;
+    width:33%;
 }
 .entry{
     padding:3%;
@@ -34,7 +34,9 @@
     padding: 1.2%;
     background-color: rgb(47, 74, 47);
     margin-top:8px;
-    width: 21%;
+    width:25%;
+    min-width: 236px;
+    
 
     
 }
