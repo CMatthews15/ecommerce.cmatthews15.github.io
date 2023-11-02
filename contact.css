@@ -4,7 +4,7 @@
 }
 
 .container{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 7vw;
@@ -14,32 +14,63 @@
 }
 
 .map-responsive{
-    margin-right:60px;
+    margin-right:;
+    margin-top:2%;
+    width:40%;
 }
 .entry{
     padding:3%;
     margin:1%;
-    padding-left: 10%;
+    
     
 }
 .input{
-    width: 80%;
-    height: 150%;
+    width: 90%;
+    height: 650%;
     margin: 2%;
     margin-bottom: 0;
     
 }
+#contact-form{
+    padding: 1.2%;
+    margin-left: 4%;
+    background-color: rgb(47, 74, 47);
+    margin-top:8px;
+
+    
+}
 .your-info{
     font-size: 1.3em;
-    padding-left: 10%;
-    padding-right: 20%;
-    display: flexbox;
-    width: 120%;
+    color: white;
+}
+
+#reason{
+    text-align: center;
+    margin-top: 5%;
 }
 .gallery{
     display: inline-flex;
-    height:20vh;
-    width: 20vw;
+    height:32vh;
+    width: 80vw;
+    justify-content: space-around;
+    margin-left: 8%;
+    margin-bottom:3% ;
     
     
+}
+
+#gallery1{
+    height:30vh;
+    margin-right:60 %;
+    width:100%;
+}
+#gallery2{
+    height:30vh;
+    margin-right: 8%;
+    width:100%;
+}
+#gallery3{
+    height:30vh;
+    margin-right: 8%;
+    width:100%;
 }
